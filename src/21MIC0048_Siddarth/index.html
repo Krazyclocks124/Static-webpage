@@ -1,9 +1,35 @@
-<!DOCTYPE html>
-<body
+<html>
+<body>
+    <div id="terminal">
+      <div id="mainInfo">
+        <div>
+          <div class="inlineContainer">
+           
+            
+            <img src="https://raw.githubusercontent.com/zachey01/terminalPortfolio/main/src/public/img/logoNoColor.svg" alt class="avatar" />
+          </div>
+          <br />
+          Welcome to my personal website!
+          <br />
+          <div id="helpCmdList"></div>
+        </div>
+      </div>
+      <div id="output"></div>
+      <div id="input" class="command-input">
+        <span id="prompt">
+          <span class="ownerTerminal"><b>siddarth@profile</b></span
+          ><b>:~$</b>
+        </span>
 
+        <input
+          type="text"
+          id="cmd"
+          oninput="showSuggestions()"
+          onkeydown="handleKeyDown(event)"
+        />
+      </div>
 
-<h1> I am Gay </h1>>
-</body>
-</body>
-
-</html>>
+      <div id="suggestions"></div>
+    </div>
+  </body>
+</html>
