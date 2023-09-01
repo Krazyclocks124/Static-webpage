@@ -8,36 +8,14 @@
         
     </head>
 <body>
-    <div id="terminal">
-      <div id="mainInfo">
-        <div>
-          <div class="inlineContainer">
-           
-            
-            <img src="https://raw.githubusercontent.com/zachey01/terminalPortfolio/main/src/public/img/logoNoColor.svg" alt class="avatar" />
-          </div>
-          <br />
-          Welcome to my personal website!
-          <br />
-          <div id="helpCmdList"></div>
-        </div>
-      </div>
-      <div id="output"></div>
-      <div id="input" class="command-input">
-        <span id="prompt">
-          <span class="ownerTerminal"><b>siddarth@profile</b></span
-          ><b>:~$</b>
-        </span>
-
-        <input
-          type="text"
-          id="cmd"
-          oninput="showSuggestions()"
-          onkeydown="handleKeyDown(event)"
-        />
-      </div>
-
-      <div id="suggestions"></div>
-    </div>
+   
+<div class="container">
+  <h1> Simple Blog Post </h1>
+  <textarea rows="8" cols="50" placeholder="Enter blog post here..." id="blogText"></textarea><br>
+  <button onclick="returnPost()">Submit</button>
+  <!-- Post details go here -->
+  <div id="app"><div>
+</div>
+ 
   </body>
 </html>
